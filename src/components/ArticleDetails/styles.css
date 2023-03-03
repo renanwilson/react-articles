@@ -1,0 +1,61 @@
+.conteudo {
+    font-family: "Roboto", sans-serif;
+}
+.conteudo p {
+    margin: 8px 0;
+    font-size: 18px;
+    color: #414141;
+}
+.conteudo h2 {
+    color: #419fb9;
+    font-size: 32px;
+    margin: 16px 0;
+    font-weight: 700;
+}
+.conteudo h3{
+    color: #419fb9;
+    font-size: 24px;
+    margin: 16px 0;
+    font-weight: 700;
+}
+.conteudo blockquote {
+    background-color: #fff1f7;
+}
+.conteudo blockquote p {
+    color: rgb(126, 59, 91);
+}
+.conteudo img {
+    margin: 16px 0;
+}
+.conteudo a {
+    font-size: 18px;
+    color: #ff007f;
+    border-bottom: 1px dotted rgb(212, 100, 154);
+}
+.conteudo ul {
+    list-style-type: disc;
+    margin-left: 24px;
+}
+.conteudo li {
+    padding: 8px 0;
+    font-size: 18px;
+}
+.bibliography ul {
+    list-style-type: disc;
+    margin-left: 24px;
+}
+.bibliography li {
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 1.5rem;
+    overflow-wrap: break-word;
+}
+.bibliography a {
+    text-decoration: none;
+    word-wrap: break-word;
+    color: #ff007f;
+    border-bottom: 1px dotted rgb(212, 100, 154);
+}
+.bibliography p {
+    font-size: 16px;
+}
