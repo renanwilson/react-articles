@@ -9,7 +9,7 @@ import React, {
 
 type PageContextProps = {
   page: number;
-  setPage: Dispatch<SetStateAction<unknown>>;
+  setPage: Dispatch<SetStateAction<any>>;
 };
 type PageContextProviderProps = {
   children: ReactElement;
