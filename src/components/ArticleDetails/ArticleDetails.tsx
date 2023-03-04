@@ -41,7 +41,7 @@ export function ArticleDetails({ article }: ArticleDetailsProps) {
             <img
               src={article.author.picture}
               className="rounded-[22px] max-w-[5rem]"
-              alt={article.author.name}
+              alt={`Foto de ${article.author.name}`}
             />
             <div>
               <p className="font-normal">

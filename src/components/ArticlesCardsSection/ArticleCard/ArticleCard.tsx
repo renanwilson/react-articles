@@ -21,7 +21,7 @@ export function ArticleCards({ item }: ArticleProps) {
     >
       <img
         src={item.featured_media["mid-size"]}
-        alt=""
+        alt={`thumbnail de ${item.title}`}
         className="w-full lg:max-w-[15rem]"
       />
       <div className="flex flex-col gap-1 p-1 lg:justify-between">
