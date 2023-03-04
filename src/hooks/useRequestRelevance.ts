@@ -6,10 +6,10 @@ export const useRequestRelevance = () => {
   const { setList } = useListContext();
   const { search } = useSearchContext();
 
-  const RequestRelevance = () => {
+  const requestRelevance = () => {
     apiRelevance(search, setList);
   };
   return {
-    RequestRelevance,
+    requestRelevance,
   };
 };

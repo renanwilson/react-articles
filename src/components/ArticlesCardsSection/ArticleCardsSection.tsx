@@ -6,7 +6,7 @@ import { useRequestRelevance } from "hooks/useRequestRelevance";
 import { ArticleCards } from "./ArticleCard/ArticleCard";
 
 export function ArticleCardsSection() {
-  const { RequestRelevance } = useRequestRelevance();
+  const { requestRelevance } = useRequestRelevance();
   const { requestOnButton } = useRequestsApi();
   const [relevance, setRelevance] = useState(false);
   const { list } = useListContext();
@@ -32,7 +32,7 @@ export function ArticleCardsSection() {
                   : "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               }
               onClick={() => {
-                RequestRelevance();
+                requestRelevance();
                 setRelevance(true);
               }}
             >
