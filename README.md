@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# react coodesh challenge!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🖥️ Olhe este projeto na web
+- [react-coodesh-challenge](https://react-coodesh-challenge.vercel.app)
 
-## Available Scripts
+## 🚀 Technologies
 
-In the project directory, you can run:
+Este projeto está usando: 
+- [ReactJS](https://reactjs.org)
+- [typescript](https://www.typescriptlang.org)
 
-### `yarn start`
+Libs:
+- [tailwindcss](https://tailwindcss.com)
+- [Material Ui](https://mui.com)
+- [React Helmet Async](https://www.npmjs.com/package/react-helmet-async)
+- [React Router Dom](https://reactrouter.com/en/main)
+- [axios](https://axios-http.com/ptbr/docs/intro)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Sobre o projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Esse projeto é um desafio do Coodesh, com intenção de testar minhas habilidades em ReactJS.
 
-### `yarn test`
+## Melhorias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ao longo do projeto da para ver que ele pode ser um produto mais completo, eu vou listar algumas possíveis melhorias:
 
-### `yarn build`
+- [ ] Implementar darkmode
+- [ ] Criar uma página de loading
+- :heavy_check_mark: Responsividade para mobile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Também é possível ver algumas melhoria para o código:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] Criar HOC para o pagination context
+- [ ] Criar função para passar o Suspense para componentes
+- :heavy_check_mark: Criar interface para contextos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Problemas
 
-### `yarn eject`
+Eu não tive sérios problemas, é uma api com uma boa documentação e bem fácil de ser usada, porém em performace deixa muito a desejar, logo algumas requisições são bem lentas, principalmente nas pesquisas.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📜 Scripts
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para rodar esse projeto você precisa:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `yarn install` para intalar as dependência projeto
+- `yarn start` para abrir o projeto na porta 9045
