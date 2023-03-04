@@ -11,7 +11,7 @@ export function PaginationContent() {
   const { search } = useSearchContext();
 
   const handleChange = (event: ChangeEvent<unknown>, value: unknown) => {
-    setPagination(value);
+    setPagination(Number(value));
   };
 
   useEffect(() => {

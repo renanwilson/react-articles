@@ -9,7 +9,7 @@ import React, {
 
 type PaginationContextProps = {
   pagination: number;
-  setPagination: Dispatch<SetStateAction<any>>;
+  setPagination: Dispatch<SetStateAction<number>>;
 };
 type PaginationContextProviderProps = {
   children: ReactElement;
