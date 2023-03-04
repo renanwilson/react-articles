@@ -1,5 +1,5 @@
 import { useSearchContext } from "contexts/SearchContext";
-import { useRequestsApi } from "utils/RequestApi";
+import { useRequestsApi } from "hooks/useRequestApi";
 
 export function SearchInput() {
   const { handleInput } = useRequestsApi();
