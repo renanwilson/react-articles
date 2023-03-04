@@ -1,18 +1,13 @@
-import {
-  NextPageButton,
-  PreviousPagButton,
-} from "components/Button/PaginationButton";
+import { PaginationContent } from "components/PaginationContent/PaginationContent";
 import { useListContext } from "contexts/ListContext";
-import { usePageContext } from "contexts/PageContext";
 import React, { useState } from "react";
-import { useRequestsApi } from "utils/RequestApi";
-import { useRequestRelevance } from "utils/RequestRelevance";
+import { useRequestsApi } from "hooks/useRequestApi";
+import { useRequestRelevance } from "hooks/useRequestRelevance";
 import { ArticleCards } from "./ArticleCard/ArticleCard";
 
 export function ArticleCardsSection() {
   const { RequestRelevance } = useRequestRelevance();
   const { requestOnButton } = useRequestsApi();
-  const { page } = usePageContext();
   const [relevance, setRelevance] = useState(false);
   const { list } = useListContext();
 
@@ -63,13 +58,9 @@ export function ArticleCardsSection() {
             {list.data.map((item) => {
               return <ArticleCards item={item} key={item.id} />;
             })}
-            <div className="flex gap-5 flex-col lg:flex-row lg:gap-10 justify-between items-center lg:w-1/2">
-              <h1 className="text-2xl font-extrabold font-normal">
-                {page}/{list.pages} Páginas
-              </h1>
+            <div className="flex gap-5 flex-col lg:flex-row lg:gap-10 justify-between items-center lg:w-1/2 lg:justify-center">
               <div className="flex gap-5 lg:gap-10">
-                <PreviousPagButton />
-                <NextPageButton />
+                <PaginationContent />
               </div>
             </div>
           </>
