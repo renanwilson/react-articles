@@ -18,7 +18,7 @@ Libs:
 
 ## 💻 Sobre o projeto
 
-Esse projeto é um desafio do Coodesh, com intenção de testar minhas habilidades em ReactJS.
+Esse projeto é um desafio do Coodesh, com intenção de testar minhas habilidades em ReactJS. Leia mais sobre o desafio <a href="https://github.com/renanwilson/react-coodesh-challenge/tree/master/aboutchallenge">aqui</a>
 
 ## Melhorias
 
