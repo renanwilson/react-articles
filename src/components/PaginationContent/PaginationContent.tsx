@@ -1,22 +1,22 @@
 import { Pagination } from "@mui/material";
 import { useListContext } from "contexts/ListContext";
-import { usePageContext } from "contexts/PageContext";
+import { usePaginationContext } from "contexts/PaginationContext";
 import { useSearchContext } from "contexts/SearchContext";
 import React, { ChangeEvent, useEffect } from "react";
 import { RequestApi } from "services/api";
 
 export function PaginationContent() {
-  const { page, setPage } = usePageContext();
+  const { pagination, setPagination } = usePaginationContext();
   const { setList } = useListContext();
   const { search } = useSearchContext();
 
   const handleChange = (event: ChangeEvent<unknown>, value: unknown) => {
-    setPage(value);
+    setPagination(value);
   };
 
   useEffect(() => {
-    RequestApi(search, setList, page);
-  }, [search, setList, page]);
+    RequestApi(search, setList, pagination);
+  }, [search, setList, pagination]);
 
   const { list } = useListContext();
   return (

@@ -3,24 +3,24 @@ import { useSearchContext } from "contexts/SearchContext";
 import { useCallback } from "react";
 import { RequestApi } from "services/api";
 import { useNavigate } from "react-router-dom";
-import { usePageContext } from "contexts/PageContext";
+import { usePaginationContext } from "contexts/PaginationContext";
 
 export const useRequestsApi = () => {
   const navigate = useNavigate();
   const { setList } = useListContext();
   const { search } = useSearchContext();
-  const { page } = usePageContext();
+  const { pagination } = usePaginationContext();
   const handleInput: React.KeyboardEventHandler<HTMLInputElement> = useCallback(
     (e) => {
       if (e.key === "Enter") {
         navigate("/search_list");
-        RequestApi(search, setList, page);
+        RequestApi(search, setList, pagination);
       }
     },
-    [search, setList, navigate, page]
+    [search, setList, navigate, pagination]
   );
   const requestOnButton = () => {
-    RequestApi(search, setList, page);
+    RequestApi(search, setList, pagination);
   };
   return {
     handleInput,
