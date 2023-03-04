@@ -21,7 +21,11 @@ export function PaginationContent() {
   const { list } = useListContext();
   return (
     <>
-      <Pagination count={list.pages} onChange={handleChange} />
+      <Pagination
+        count={list.pages}
+        onChange={handleChange}
+        page={pagination}
+      />
     </>
   );
 }
