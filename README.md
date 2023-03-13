@@ -25,13 +25,11 @@ Esse projeto é um desafio do Coodesh, com intenção de testar minhas habilidad
 Ao longo do projeto da para ver que ele pode ser um produto mais completo, eu vou listar algumas possíveis melhorias:
 
 - [ ] Implementar darkmode
-- [ ] Criar uma página de loading
 - :heavy_check_mark: Responsividade para mobile
 
 Também é possível ver algumas melhoria para o código:
 
 - [ ] Criar HOC para o pagination context
-- [ ] Criar função para passar o Suspense para componentes
 - :heavy_check_mark: Criar interface para contextos
 
 ## Problemas
