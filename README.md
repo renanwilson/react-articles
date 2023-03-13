@@ -29,7 +29,6 @@ Ao longo do projeto da para ver que ele pode ser um produto mais completo, eu vo
 
 Também é possível ver algumas melhoria para o código:
 
-- [ ] Criar HOC para o pagination context
 - :heavy_check_mark: Criar interface para contextos
 
 ## Problemas
