@@ -42,5 +42,5 @@ Eu não tive sérios problemas, é uma api com uma boa documentação e bem fác
 
 Para rodar esse projeto você precisa:
 
-- `yarn install` para intalar as dependência projeto
+- `yarn install` para instalar as dependência projeto
 - `yarn start` para abrir o projeto na porta 9045
