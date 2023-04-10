@@ -4,13 +4,24 @@ import React, { useState } from "react";
 import { useRequestsApi } from "hooks/useRequestApi";
 import { useRequestRelevance } from "hooks/useRequestRelevance";
 import { ArticleCards } from "./ArticleCard/ArticleCard";
+import { usePaginationContext } from "contexts/PaginationContext";
 
 export function ArticleCardsSection() {
   const { requestRelevance } = useRequestRelevance();
   const { requestOnButton } = useRequestsApi();
   const [relevance, setRelevance] = useState(false);
   const { list } = useListContext();
-
+  const { setPagination } = usePaginationContext();
+  const handleRelevance = () => {
+    setRelevance(true);
+    setPagination(1);
+    requestRelevance();
+  };
+  const handleNormal = () => {
+    requestOnButton();
+    setRelevance(false);
+    setPagination(1);
+  };
   return list.pages === 0 ? (
     <div className="flex item-center justify-center my-2">
       <h1 className="text-3xl font-extrabold font-normal">
@@ -31,10 +42,7 @@ export function ArticleCardsSection() {
                   ? "bg-blue-900 text-white py-2 px-4 rounded"
                   : "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               }
-              onClick={() => {
-                requestRelevance();
-                setRelevance(true);
-              }}
+              onClick={handleRelevance}
             >
               Ordenar por relevância
             </button>
@@ -44,10 +52,7 @@ export function ArticleCardsSection() {
                   ? "bg-blue-900 text-white font-bold py-2 px-4 rounded"
                   : "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               }
-              onClick={() => {
-                requestOnButton();
-                setRelevance(false);
-              }}
+              onClick={handleNormal}
             >
               Ordem normal
             </button>

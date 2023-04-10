@@ -9,15 +9,16 @@ export const useRequestsApi = () => {
   const navigate = useNavigate();
   const { setList } = useListContext();
   const { search } = useSearchContext();
-  const { pagination } = usePaginationContext();
+  const { pagination, setPagination } = usePaginationContext();
   const handleInput: React.KeyboardEventHandler<HTMLInputElement> = useCallback(
     (e) => {
       if (e.key === "Enter") {
         navigate("/search_list");
         RequestApi(search, setList, pagination);
+        setPagination(1);
       }
     },
-    [search, setList, navigate, pagination]
+    [search, setList, navigate, pagination, setPagination]
   );
   const requestOnButton = () => {
     RequestApi(search, setList, pagination);

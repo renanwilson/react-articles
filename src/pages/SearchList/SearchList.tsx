@@ -17,6 +17,7 @@ export default function SearchList() {
       <HelmetProvider>
         <Helmet>
           <meta charSet="UTF-8" />
+          <title>Resultados para sua pesquisa</title>
         </Helmet>
       </HelmetProvider>
       <Header />
