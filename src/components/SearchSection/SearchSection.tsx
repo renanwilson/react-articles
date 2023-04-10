@@ -10,6 +10,9 @@ export function SearchSection({ title }: SearchSectionProps) {
       <div className="flex justify-center">
         <div className="w-full m-1 mt-10 border-2 p-10 flex flex-col gap-10 lg:rounded lg:items-center lg:w-1/2">
           <h1 className="text-3xl font-bold font-normal">{title}</h1>
+          <h1 className="text-md font-normal">
+            A pesquisa precisa ser feita em espanhol!
+          </h1>
           <SearchInput />
         </div>
       </div>
