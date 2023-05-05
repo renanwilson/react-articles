@@ -1,11 +1,11 @@
 # React Articles!
 
-## 🖥️ Olhe este projeto na web
+## 🖥️ Look this project in the web
 - [react-articles](https://react-coodesh-challenge.vercel.app)
 
 ## 🚀 Technologies
 
-Este projeto está usando: 
+This project is using: 
 - [ReactJS](https://reactjs.org)
 - [typescript](https://www.typescriptlang.org)
 
@@ -17,12 +17,11 @@ Libs:
 - [axios](https://axios-http.com/ptbr/docs/intro)
 
 ## 💻 Sobre o projeto
-
-Esse projeto é um desafio do Coodesh, com intenção de testar minhas habilidades em ReactJS. Leia mais sobre o desafio <a href="https://github.com/renanwilson/react-coodesh-challenge/tree/master/aboutchallenge">aqui</a>
+This project is a Coodesh challenge, with intention of test my ReactJS habilities. You can read more about this project <a href="https://github.com/renanwilson/react-coodesh-challenge/tree/master/aboutchallenge">here</a>
 
 ## 📜 Scripts
 
-Para rodar esse projeto você precisa:
+For run this project you need:
 
-- `yarn install` para instalar as dependência projeto
-- `yarn start` para abrir o projeto na porta 9045
+- `yarn install` for install the dependencies
+- `yarn start` for open project in port 9045
