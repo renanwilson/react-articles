@@ -1,5 +1,4 @@
 # React Articles!
-<img src="https://user-images.githubusercontent.com/62245391/236486734-a785fb29-8c34-47c9-a173-c655931a3530.png" alt="image of project" />
 
 ## 🖥️ Olhe este projeto na web
 - [react-articles](https://react-coodesh-challenge.vercel.app)
