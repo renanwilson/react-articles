@@ -1,7 +1,7 @@
-# react coodesh challenge!
+# React Articles!
 
 ## 🖥️ Olhe este projeto na web
-- [react-coodesh-challenge](https://react-coodesh-challenge.vercel.app)
+- [react-articles](https://react-coodesh-challenge.vercel.app)
 
 ## 🚀 Technologies
 
@@ -19,21 +19,6 @@ Libs:
 ## 💻 Sobre o projeto
 
 Esse projeto é um desafio do Coodesh, com intenção de testar minhas habilidades em ReactJS. Leia mais sobre o desafio <a href="https://github.com/renanwilson/react-coodesh-challenge/tree/master/aboutchallenge">aqui</a>
-
-## Melhorias
-
-Ao longo do projeto da para ver que ele pode ser um produto mais completo, eu vou listar algumas possíveis melhorias:
-
-- [ ] Implementar darkmode
-- :heavy_check_mark: Responsividade para mobile
-
-Também é possível ver algumas melhoria para o código:
-
-- :heavy_check_mark: Criar interface para contextos
-
-## Problemas
-
-Eu não tive sérios problemas, é uma api com uma boa documentação e bem fácil de ser usada, porém em performace deixa muito a desejar, logo algumas requisições são bem lentas, principalmente nas pesquisas.
 
 ## 📜 Scripts
 
